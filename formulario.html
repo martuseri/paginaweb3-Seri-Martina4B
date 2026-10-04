@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de la Compra</title>
+    <link rel="stylesheet" href="style2.css"> 
+</head>
+<body>
+    <div>
+        <h1>Formulario de la Compra</h1>
+        <p>Completa todos los datos para poder hacer la compra</p>
+
+        <form action="#" method="POST" id="registroForm">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <div>
+                    <label for="nombre">Nombre completo </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Martina Seri" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico </label>
+                    <input type="email" id="email" name="email" placeholder="Ej: martina@gmail.com" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 11 0000-0000">
+                </div>
+
+                <div>
+                    <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                </div>
+
+                <div>
+                     <label for="pais">País</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Seleccione un país:</option>
+                        <option value="ARG">Argentina</option>
+                         <option value="ENG">Inglaterra</option>
+                          <option value="FRA">Francia</option>
+                        <option value="BOL">Bolivia</option>
+                        <option value="BRA">Brasil</option>
+                        <option value="CLE">Chile</option>
+                        <option value="COL">Colombia</option>
+                         <option value="SDA">Sudáfrica</option>
+                        <option value="ECU">Ecuador</option>
+                        <option value="ESP">España</option>
+                        <option value="MEX">México</option>
+                        <option value="PER">Perú</option>
+                        <option value="URU">Uruguay</option>
+                        <option value="VEN">Venezuela</option>
+                        <option value="OTRO">Otro</option>
+                        
+                    </select>
+                </div>
+
+                <div>
+                    <label>Género</label>
+                    <div>
+                        <label>
+                            <input type="radio" name="genero" value="Femenino">
+                            Femenino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="Masculino">
+                            Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="Otro">
+                            Otro
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="NoDecirlo" checked>
+                            Prefiero no decirlo
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="direccion"> Direccion</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Ej: Av Rivadavia 1502" required>
+                
+                </div>
+                <div> <textarea id="direccion" name="especificaciones" rows="2" placeholder="especificaciones sobre el lugar de vivienda:"></textarea></div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Información de la prenda</legend>
+                <div>
+                    <label> Tipo de Prenda</label>
+                </div>
+                  <div>
+                    <label>
+                            <input type="radio" name="prenda" value="Remera" >
+                            Remera
+                    </label>
+                    <label>
+                            <input type="radio" name="prenda" value="Pantalón" >
+                            Pantalón
+                    </label>
+                    <label>
+                            <input type="radio" name="prenda" value="Buzo" >
+                            Buzo
+                     </label>
+                     <label>
+                            <input type="radio" name="prenda" value="Zapatillas" >
+                            Zapatillas
+                    </label>
+                </div>                
+
+                <div>
+                <label> Talle </label>
+                </div>
+
+                  <div>
+                    <label>
+                        <input type="radio" name="talle" value="XXS" >
+                            XXS
+                    </label>
+                    <label>
+                            <input type="radio" name="talle" value="XS" >
+                            XS
+                    </label>
+                    <label>
+                         <input type="radio" name="talle" value="S" >
+                           S
+                    </label>
+                    <label>
+                            <input type="radio" name="talle" value="M" >
+                            M
+                          
+                    </label>
+                    <label> <input type="radio" name="talle" value="L" >
+                    L 
+                </label>
+
+                </label>
+                <label> <input type="radio" name="talle" value="XL" >
+                    XL 
+                </label>
+                <label> <input type="radio" name="talle" value="XXL" >
+                    XXL
+                </label>
+                </div>                
+
+                <div> <label> Color</label></div>
+                <div> <label> <input type="color" name="color" value="color"></label></div>
+                
+                <div> <label> Cantidad </label></div>
+                <div> <label> <input type="number" name="cantidad" value="cantidad"></label></div>
+            </fieldset>
+
+
+        
+            <div>
+                <label>
+                    <input type="checkbox" name="terminos" required>
+                    Acepto los  <a href="#"> términos y condiciones</a> 
+                </label>
+            </div>
+
+           
+            <div>
+                <button type="submit">Ir a pagar</button>
+                <button type="reset">Limpiar formulario</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
